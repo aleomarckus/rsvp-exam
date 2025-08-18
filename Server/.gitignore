@@ -1,0 +1,60 @@
+############################
+# OS & IDE
+############################
+.DS_Store
+Thumbs.db
+desktop.ini
+.vs/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+############################
+# Build outputs
+############################
+bin/
+obj/
+Debug/
+Release/
+out/
+[Bb]uild/
+[Bb]uild[Ll]og.*
+
+############################
+# .NET artifacts
+############################
+project.lock.json
+project.fragment.lock.json
+artifacts/
+*.dll
+*.exe
+*.app
+*.log
+
+############################
+# Entity Framework
+############################
+# Keep migrations in Git, ignore design-time artifacts
+*.Designer.cs
+
+############################
+# SQLite / Local DB
+############################
+*.db
+*.db-shm
+*.db-wal
+
+############################
+# Secrets / Config
+############################
+#appsettings.Development.json
+#appsettings.Local.json
+secrets.json
+
+############################
+# Logs
+############################
+*.log
+logs/
