@@ -75,6 +75,6 @@ npm i && npm run dev
 
 
 ## Limitations
-- ** No Authentication system (Password based)
-- ** No Invitation sending through emails or any form of socials
-- ** Limited User Experience
+- No Authentication system (Password based)
+- No Invitation sending through emails or any form of socials
+- Limited User Experience
