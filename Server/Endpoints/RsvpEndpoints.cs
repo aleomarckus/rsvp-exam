@@ -25,7 +25,7 @@ public static class RsvpEndpoints
             var isRsvped = await db.Rsvps.AnyAsync(r => r.EventId == eventId && r.Username == user);
 
             if (isRsvped)
-                return Results.Ok(new RsvpResultDto(eventId, ev.MaxRsvpCount, current, isRsvped, isFull));
+                return Results.Conflict(new { message = "Already Rsvped"});
             
             if(isFull)
                 return Results.BadRequest(new { message = "Event is full" });
